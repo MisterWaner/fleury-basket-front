@@ -4,7 +4,7 @@ import { MainMenu } from "./MainMenu";
 
 export function Header() {
     return (
-        <header className="w-full border-b bg-slate-950 backdrop-blur-md text-slate-50 sticky top-0 z-50 shadow-md">
+        <header className="w-full border-b bg-black backdrop-blur-md text-slate-50 sticky top-0 z-50 shadow-md">
             <div className="grid grid-cols-6 items-center px-4 py-3">
                 <div className="col-span-2 flex items-center gap-2">
                     <Image

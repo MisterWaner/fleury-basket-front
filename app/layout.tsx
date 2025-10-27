@@ -28,7 +28,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${libreBaskerville.variable} ${montserrat.variable} antialiased bg-slate-50 text-slate-950`}
+                className={`${libreBaskerville.variable} ${montserrat.variable} antialiased bg-fleury-pink/75 text-slate-950`}
             >
                 <Header />
                 {children}
