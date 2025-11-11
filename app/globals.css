@@ -138,3 +138,10 @@
     background-blend-mode: color;
 }
 
+.menu-link {
+    @apply text-sm px-6 py-2 font-medium hover:font-semibold;
+}
+
+.menu-section-title {
+    @apply text-sm px-3 py-2 font-semibold uppercase cursor-pointer;
+}

@@ -46,7 +46,7 @@ export function MainMenu() {
                 <nav className="w-full mt-6 flex flex-col gap-4">
                     <Link
                         href="/"
-                        className="text-sm px-6 py-2 font-semibold uppercase"
+                        className="text-sm px-6 py-2 font-semibold uppercase hover:underline hover:underline-offset-4"
                         onClick={toggleMenu}
                     >
                         Accueil
@@ -55,23 +55,23 @@ export function MainMenu() {
                     <Accordion
                         type="single"
                         collapsible
-                        className="w-2/3 text-sm px-3 py-2 font-medium "
+                        className="w-2/3 text-sm px-3 py-2 font-medium"
                     >
                         <AccordionItem value="equipes">
-                            <AccordionTrigger className="text-sm px-3 py-2 font-semibold uppercase">
+                            <AccordionTrigger className="menu-section-title">
                                 Équipes
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-2">
                                 <Link
                                     href="/"
-                                    className="text-sm px-6 py-2 font-medium"
+                                    className="menu-link"
                                     onClick={toggleMenu}
                                 >
                                     Nos équipes
                                 </Link>
                                 <Link
                                     href="/"
-                                    className="text-sm px-6 py-2 font-medium"
+                                    className="menu-link"
                                     onClick={toggleMenu}
                                 >
                                     Résultats & Classements
@@ -86,28 +86,28 @@ export function MainMenu() {
                         className="w-2/3 text-sm px-3 py-2 font-medium "
                     >
                         <AccordionItem value="club">
-                            <AccordionTrigger className="text-sm px-3 py-2 font-semibold uppercase">
+                            <AccordionTrigger className="menu-section-title">
                                 Club
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-2">
                                 <Link
                                     href="/"
                                     onClick={toggleMenu}
-                                    className="text-sm px-6 py-2 font-medium"
+                                    className="menu-link"
                                 >
                                     À propos
                                 </Link>
                                 <Link
                                     href="/"
                                     onClick={toggleMenu}
-                                    className="text-sm px-6 py-2 font-medium"
+                                    className="menu-link"
                                 >
                                     Organigramme
                                 </Link>
                                 <Link
                                     href="/"
                                     onClick={toggleMenu}
-                                    className="text-sm px-6 py-2 font-medium"
+                                    className="menu-link"
                                 >
                                     Partenaires
                                 </Link>
@@ -121,21 +121,21 @@ export function MainMenu() {
                         className="w-2/3 text-sm px-3 py-2 font-medium "
                     >
                         <AccordionItem value="contact">
-                            <AccordionTrigger className="text-sm px-3 py-2 font-semibold uppercase">
+                            <AccordionTrigger className="menu-section-title">
                                 Contactez-nous
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-2">
                                 <Link
                                     href="/"
                                     onClick={toggleMenu}
-                                    className="text-sm px-6 py-2 font-medium"
+                                    className="menu-link"
                                 >
                                     Inscription
                                 </Link>
                                 <Link
                                     href="/"
                                     onClick={toggleMenu}
-                                    className="text-sm px-6 py-2 font-medium"
+                                    className="menu-link"
                                 >
                                     FAQ
                                 </Link>
