@@ -105,7 +105,7 @@ export function MainMenu() {
                                     Organigramme
                                 </Link>
                                 <Link
-                                    href="/"
+                                    href="/club/partenaires"
                                     onClick={toggleMenu}
                                     className="menu-link"
                                 >

@@ -12,13 +12,12 @@ export default function SponsorCarouselImage({
     return (
         <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
-                <Card className="bg-transparent flex aspect-square justify-center items-center">
+                <Card className="bg-transparent border-none shadow-none flex aspect-square justify-center items-center">
                     <CardContent>
-                        <Image src={src} alt={alt} width={100} height={100} />
+                        <Image src={src} alt={alt} width={200} height={200} />
                     </CardContent>
                 </Card>
             </div>
-            
         </CarouselItem>
     );
 }

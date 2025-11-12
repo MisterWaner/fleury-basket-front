@@ -1,6 +1,6 @@
 import { GiBasketballBasket, GiBasketballJersey } from "react-icons/gi";
 import { PiStrategy } from "react-icons/pi";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "./Headings/SectionTitle";
 import IconWrapper from "./IconWrapper";
 
 export default function ValorSection() {

@@ -43,16 +43,15 @@ const sponsors = [
 export default function SponsorCarousel() {
     return (
         <Carousel
-            className="w-full max-w-sm mx-auto"
+            className="w-full lg:max-w-xl max-w-sm mx-auto"
             opts={{
                 align: "start",
                 loop: true,
-
             }}
             plugins={[
                 Autoplay({
                     delay: 2000,
-                })
+                }),
             ]}
         >
             <CarouselContent className="flex items-center">
@@ -64,8 +63,8 @@ export default function SponsorCarousel() {
                     />
                 ))}
             </CarouselContent>
-            <CarouselPrevious className=""/>
-            <CarouselNext />
+            {/* <CarouselPrevious className=""/>
+            <CarouselNext /> */}
         </Carousel>
     );
 }
