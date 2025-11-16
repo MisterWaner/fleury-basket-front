@@ -1,11 +1,11 @@
 import { GiBasketballBasket, GiBasketballJersey } from "react-icons/gi";
 import { PiStrategy } from "react-icons/pi";
-import SectionTitle from "./Headings/SectionTitle";
-import IconWrapper from "./IconWrapper";
+import SectionTitle from "@/components/Headings/SectionTitle";
+import IconWrapper from "@/components/IconWrapper";
 
 export default function ValorSection() {
     return (
-        <div className="w-full">
+        <div className="w-full mt-10">
             <SectionTitle>
                 Nos <span className="uppercase font-extrabold">Principes</span>
             </SectionTitle>

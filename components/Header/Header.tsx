@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { MainMenu } from "./MainMenu";
+import { MainMenu } from "@/components/Header/MainMenu";
 
 export function Header() {
     return (
@@ -25,4 +25,5 @@ export function Header() {
         </header>
     );
 }
+
 

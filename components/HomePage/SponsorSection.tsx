@@ -1,5 +1,5 @@
-import SectionTitle from "./Headings/SectionTitle";
-import SponsorCarousel from "./SponsorCarousel/SponsorCarousel";
+import SectionTitle from "@/components/Headings/SectionTitle";
+import SponsorCarousel from "@/components/SponsorCarousel/SponsorCarousel";
 
 export default function SponsorSection() {
     return (
@@ -12,4 +12,6 @@ export default function SponsorSection() {
         </div>
     );
 }
+
+
 

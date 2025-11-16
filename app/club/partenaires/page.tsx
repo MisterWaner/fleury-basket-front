@@ -8,8 +8,8 @@ import SponsorGridItem, {
 
 export default function page() {
     return (
-        <main>
-            <PageTitle>Nos Partenaires</PageTitle>
+        <>
+            <PageTitle>Nos Partenaires.</PageTitle>
             <Wrapper>
                 <p>
                     Pour pouvoir{" "}
@@ -77,7 +77,7 @@ export default function page() {
                     />
                 </SponsorGrid>
             </Wrapper>
-        </main>
+        </>
     );
 }
 

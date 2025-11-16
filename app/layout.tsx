@@ -3,6 +3,7 @@ import { Libre_Baskerville, Montserrat } from "next/font/google";
 import "./globals.css";
 
 import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer/Footer";
 
 const libreBaskerville = Libre_Baskerville({
     variable: "--font-libre-baskerville",
@@ -28,10 +29,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${libreBaskerville.variable} ${montserrat.variable} antialiased bg-fleury-pink/75 text-slate-950`}
+                className={`${libreBaskerville.variable} ${montserrat.variable} antialiased bg-fleury-pink/75 text-slate-950 min-h-screen flex flex-col`}
             >
                 <Header />
-                {children}
+                <main className="flex-1">{children}</main>
+                <Footer />
             </body>
         </html>
     );

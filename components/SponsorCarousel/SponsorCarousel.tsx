@@ -1,7 +1,7 @@
 "use client";
 
 import { Carousel, CarouselContent } from "@/components/ui/carousel";
-import SponsorCarouselImage from "./SponsorCarouselImage";
+import SponsorCarouselImage from "@/components/SponsorCarousel/SponsorCarouselImage";
 import Autoplay from "embla-carousel-autoplay";
 
 const sponsors = [
@@ -61,4 +61,5 @@ export default function SponsorCarousel() {
         </Carousel>
     );
 }
+
 

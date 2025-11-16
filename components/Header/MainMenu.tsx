@@ -63,14 +63,14 @@ export function MainMenu() {
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-2">
                                 <Link
-                                    href="/"
+                                    href="/equipes/nos-equipes"
                                     className="menu-link"
                                     onClick={toggleMenu}
                                 >
                                     Nos équipes
                                 </Link>
                                 <Link
-                                    href="/"
+                                    href="/equipes/resultats-et-classements"
                                     className="menu-link"
                                     onClick={toggleMenu}
                                 >
@@ -91,14 +91,14 @@ export function MainMenu() {
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-2">
                                 <Link
-                                    href="/"
+                                    href="/club/a-propos"
                                     onClick={toggleMenu}
                                     className="menu-link"
                                 >
                                     À propos
                                 </Link>
                                 <Link
-                                    href="/"
+                                    href="/club/organigramme"
                                     onClick={toggleMenu}
                                     className="menu-link"
                                 >
@@ -126,14 +126,21 @@ export function MainMenu() {
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col gap-2">
                                 <Link
-                                    href="/"
+                                    href="/contact"
+                                    onClick={toggleMenu}
+                                    className="menu-link"
+                                >
+                                    Contact
+                                </Link>
+                                <Link
+                                    href="/inscription"
                                     onClick={toggleMenu}
                                     className="menu-link"
                                 >
                                     Inscription
                                 </Link>
                                 <Link
-                                    href="/"
+                                    href="/faq"
                                     onClick={toggleMenu}
                                     className="menu-link"
                                 >
