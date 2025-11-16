@@ -1,11 +1,6 @@
 "use client";
 
-import {
-    Carousel,
-    CarouselContent,
-    CarouselNext,
-    CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent } from "@/components/ui/carousel";
 import SponsorCarouselImage from "./SponsorCarouselImage";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -63,8 +58,6 @@ export default function SponsorCarousel() {
                     />
                 ))}
             </CarouselContent>
-            {/* <CarouselPrevious className=""/>
-            <CarouselNext /> */}
         </Carousel>
     );
 }

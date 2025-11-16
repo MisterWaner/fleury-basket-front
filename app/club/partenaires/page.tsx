@@ -1,5 +1,11 @@
 import PageTitle from "@/components/Headings/PageTitle";
+import SectionTitle from "@/components/Headings/SectionTitle";
 import Wrapper from "@/components/Wrapper";
+import SponsorGrid from "@/components/SponsorGrid/SponsorGrid";
+import SponsorGridItem, {
+    SponsorGridItemProps,
+} from "@/components/SponsorGrid/SponsorGridItem";
+
 export default function page() {
     return (
         <main>
@@ -14,7 +20,62 @@ export default function page() {
                     <span className="font-semibold"> soutien précieux</span> de
                     ses <span className="font-semibold">partenaires</span>.{" "}
                 </p>
-                <p></p>
+                <p>
+                    Si vous désirez prendre part à cette aventure,
+                    n&apos;hésitez pas à nous contacter.
+                </p>
+            </Wrapper>
+            <Wrapper>
+                <SectionTitle>
+                    Nos <span className="font-semibold">principaux</span>{" "}
+                    partenaires
+                </SectionTitle>
+                <SponsorGrid>
+                    <SponsorGridItem
+                        imageSrc="/images/sponsor-voltec.webp"
+                        imageAlt="Voltec"
+                    />
+                    <SponsorGridItem
+                        imageSrc="/images/logo-fleury.jpg"
+                        imageAlt="Logo de Fleury sur Orn"
+                    />
+                    <SponsorGridItem
+                        imageSrc="/images/rexellogo.jpeg"
+                        imageAlt="Rexel"
+                    />
+                </SponsorGrid>
+            </Wrapper>
+            <Wrapper>
+                <SectionTitle>
+                    Nos partenaires{" "}
+                    <span className="font-semibold">locaux</span>
+                </SectionTitle>
+                <SponsorGrid>
+                    <SponsorGridItem
+                        imageSrc="/images/logo-lpa.png"
+                        imageAlt="Logo de la petite agence immobilier"
+                    />
+                    <SponsorGridItem
+                        imageSrc="/images/aquila-rh.png"
+                        imageAlt="Logo d'Aquila RH"
+                    />
+                </SponsorGrid>
+            </Wrapper>
+            <Wrapper>
+                <SectionTitle>
+                    Nos partenaires{" "}
+                    <span className="font-semibold">nationaux</span>
+                </SectionTitle>
+                <SponsorGrid>
+                    <SponsorGridItem
+                        imageSrc="/images/alius-odorem.png"
+                        imageAlt="Logo d'Alius Odorem"
+                    />
+                    <SponsorGridItem
+                        imageSrc="/images/digimarketi.png"
+                        imageAlt="Logo de Digimarketi"
+                    />
+                </SponsorGrid>
             </Wrapper>
         </main>
     );
