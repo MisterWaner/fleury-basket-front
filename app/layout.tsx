@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Libre_Baskerville, Montserrat } from "next/font/google";
 import "./globals.css";
 
+import QueryProvider from "@/components/QueryProvider";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 
@@ -32,7 +33,9 @@ export default function RootLayout({
                 className={`${libreBaskerville.variable} ${montserrat.variable} antialiased bg-fleury-pink/75 text-slate-950 min-h-screen flex flex-col`}
             >
                 <Header />
-                <main className="flex-1">{children}</main>
+                <QueryProvider>
+                    <main className="flex-1">{children}</main>
+                </QueryProvider>
                 <Footer />
             </body>
         </html>
