@@ -17,6 +17,7 @@ export async function fetchCalendar(team: string): Promise<ParsedGame[]> {
         }
 
         const games: ParsedGame[] = await response.json();
+        
         return games;
     } catch (error) {
         console.error("Error fetching calendar data:", error);

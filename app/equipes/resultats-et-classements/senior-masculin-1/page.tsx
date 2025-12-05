@@ -1,7 +1,8 @@
 import Wrapper from "@/components/Wrapper";
 import PageTitle from "@/components/Headings/PageTitle";
 import SectionTitle from "@/components/Headings/SectionTitle";
-import CalendarTable from "@/components/Calendar/CalendarTable";
+import CalendarTable from "@/components/Table/CalendarTable";
+import RankingTable from "@/components/Table/RankingTable";
 
 export default function Page() {
     return (
@@ -18,6 +19,7 @@ export default function Page() {
                 </section>
                 <section>
                     <SectionTitle>Classements</SectionTitle>
+                    <RankingTable team="senior-1" />
                 </section>
             </Wrapper>
         </>
