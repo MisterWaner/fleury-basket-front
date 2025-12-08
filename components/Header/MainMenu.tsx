@@ -52,6 +52,14 @@ export function MainMenu() {
                         Accueil
                     </Link>
 
+                    <Link
+                        href="/actualites"
+                        className="text-sm px-6 py-2 font-semibold uppercase hover:underline hover:underline-offset-4"
+                        onClick={toggleMenu}
+                    >
+                        Actualités
+                    </Link>
+                    
                     <Accordion
                         type="single"
                         collapsible

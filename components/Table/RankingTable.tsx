@@ -35,8 +35,8 @@ export default function RankingTable({ team }: { team: string }) {
                     <TableHead>Joués</TableHead>
                     <TableHead>Victoires</TableHead>
                     <TableHead>Défaites</TableHead>
-                    <TableHead>Points Pour</TableHead>
-                    <TableHead>Points Contre</TableHead>
+                    <TableHead>Points Marqués</TableHead>
+                    <TableHead>Points Encaissés</TableHead>
                     <TableHead>Différence</TableHead>
                 </TableRow>
             </TableHeader>
@@ -44,7 +44,12 @@ export default function RankingTable({ team }: { team: string }) {
                 {data?.map((row, index) => (
                     <TableRow
                         key={index}
-                        className="border border-slate-950"
+                        className={`border border-slate-950 ${
+                            row.club === "FLEURY SUR ORNE BASKET - 1" ||
+                            row.club === "FLEURY SUR ORNE BASKET - 2"
+                                ? "bg-pink-500 hover:bg-pink-400"
+                                : ""
+                        }`}
                     >
                         <TableCell>{row.position}</TableCell>
                         <TableCell>{row.club}</TableCell>

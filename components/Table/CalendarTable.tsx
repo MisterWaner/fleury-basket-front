@@ -43,10 +43,11 @@ export default function CalendarTable({ team }: { team: string }) {
                         key={index}
                         className={`${
                             game.result === "Victoire"
-                                ? "bg-green-300"
+                                ? "bg-green-500 hover:bg-green-400"
                                 : game.result === "Défaite"
-                                ? "bg-red-300"
+                                ? "bg-red-500 hover:bg-red-400"
                                 : ""
+                            
                         } border border-slate-950`}
                     >
                         <TableCell>{game.datetime}</TableCell>

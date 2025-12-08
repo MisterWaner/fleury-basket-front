@@ -2,9 +2,7 @@ import PageTitle from "@/components/Headings/PageTitle";
 import SectionTitle from "@/components/Headings/SectionTitle";
 import Wrapper from "@/components/Wrapper";
 import SponsorGrid from "@/components/SponsorGrid/SponsorGrid";
-import SponsorGridItem, {
-    SponsorGridItemProps,
-} from "@/components/SponsorGrid/SponsorGridItem";
+import SponsorGridItem from "@/components/SponsorGrid/SponsorGridItem";
 
 export default function page() {
     return (
@@ -34,14 +32,17 @@ export default function page() {
                     <SponsorGridItem
                         imageSrc="/images/sponsor-voltec.webp"
                         imageAlt="Voltec"
+                        href="https://www.facebook.com/voltecelectricite/"
                     />
                     <SponsorGridItem
                         imageSrc="/images/logo-fleury.jpg"
-                        imageAlt="Logo de Fleury sur Orn"
+                        imageAlt="Logo de Fleury sur Orne"
+                        href="https://fleurysurorne.fr/"
                     />
                     <SponsorGridItem
                         imageSrc="/images/rexellogo.jpeg"
                         imageAlt="Rexel"
+                        href="https://www.rexel.fr/frx/"
                     />
                 </SponsorGrid>
             </Wrapper>
@@ -54,10 +55,12 @@ export default function page() {
                     <SponsorGridItem
                         imageSrc="/images/logo-lpa.png"
                         imageAlt="Logo de la petite agence immobilier"
+                        href="https://www.lapetiteagencecaen.com/"
                     />
                     <SponsorGridItem
                         imageSrc="/images/aquila-rh.png"
                         imageAlt="Logo d'Aquila RH"
+                        href="https://www.aquila-rh.com/agence-interim-recrutement/agence-interim-recrutement-emploi-aquila-rh-caen.html"
                     />
                 </SponsorGrid>
             </Wrapper>
@@ -70,10 +73,12 @@ export default function page() {
                     <SponsorGridItem
                         imageSrc="/images/alius-odorem.png"
                         imageAlt="Logo d'Alius Odorem"
+                        href="https://www.aliusodorem.com/"
                     />
                     <SponsorGridItem
                         imageSrc="/images/digimarketi.png"
                         imageAlt="Logo de Digimarketi"
+                        href="https://digimarketi.net/"
                     />
                 </SponsorGrid>
             </Wrapper>
