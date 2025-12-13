@@ -46,7 +46,8 @@ export default function RankingTable({ team }: { team: string }) {
                         key={index}
                         className={`border border-slate-950 ${
                             row.club === "FLEURY SUR ORNE BASKET - 1" ||
-                            row.club === "FLEURY SUR ORNE BASKET - 2"
+                            row.club === "FLEURY SUR ORNE BASKET - 2" ||
+                            row.club === "FLEURY SUR ORNE BASKET"
                                 ? "bg-pink-500 hover:bg-pink-400"
                                 : ""
                         }`}

@@ -8,7 +8,7 @@ export default function page() {
         <>
             <PageTitle>Résultats & Classements.</PageTitle>
             <Wrapper>
-                <div className="flex flex-col items-center md:flex-row gap-4">
+                <div className="flex flex-col items-center md:flex-row md:flex-wrap gap-4">
                     <Button asChild className="w-1/2 md:w-1/4">
                         <Link
                             href="/equipes/resultats-et-classements/senior-masculin-1"
@@ -25,6 +25,33 @@ export default function page() {
                             className="text-blue-600 uppercase"
                         >
                             Sénior Masculin 2
+                        </Link>
+                    </Button>
+                    <Button asChild className="w-1/2 md:w-1/4">
+                        <Link
+                            href="/equipes/resultats-et-classements/u-13-masculin"
+                            as="/equipes/resultats-et-classements/u-13-masculin"
+                            className="text-blue-600 uppercase"
+                        >
+                            U-13 Masculin
+                        </Link>
+                    </Button>
+                    <Button asChild className="w-1/2 md:w-1/4">
+                        <Link
+                            href="/equipes/resultats-et-classements/u-11-mixte"
+                            as="/equipes/resultats-et-classements/u-11-mixte"
+                            className="text-blue-600 uppercase"
+                        >
+                            U-11 Mixte
+                        </Link>
+                    </Button>
+                    <Button asChild className="w-1/2 md:w-1/4">
+                        <Link
+                            href="/equipes/resultats-et-classements/u-9-mixte"
+                            as="/equipes/resultats-et-classements/u-9-mixte"
+                            className="text-blue-600 uppercase"
+                        >
+                            U-9 Mixte
                         </Link>
                     </Button>
                 </div>
