@@ -67,5 +67,3 @@ export default function RankingTable({ team }: { team: string }) {
         </Table>
     );
 }
-
-

@@ -28,7 +28,7 @@ export default function MapLeaflet({
     popupText = `Gymnase Auguste Delaune, 19 rue François Mitterrand, 14123 Fleury-sur-Orne `,
 }: MapProps) {
     return (
-        <div className="w-full md:w-1/2 h-64 md:h80 rounded-lg overflow-hidden shadow-lg border">
+        <div className="w-full md:w-1/2 h-64 md:h80 rounded-lg overflow-hidden shadow-lg border z-0">
             <MapContainer
                 center={[latitude, longitude]}
                 zoom={zoom}
@@ -46,6 +46,4 @@ export default function MapLeaflet({
         </div>
     );
 }
-
-
 
