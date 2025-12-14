@@ -10,6 +10,7 @@ import {
     TableCell,
 } from "@/components/ui/table";
 import { fetchRanking } from "@/services/fetchRanking";
+import Basketball_Loader from "../Loaders/basketball-loader";
 
 export default function RankingTable({ team }: { team: string }) {
     const { data, error, isLoading } = useQuery({
@@ -18,7 +19,7 @@ export default function RankingTable({ team }: { team: string }) {
     });
 
     if (isLoading) {
-        return <div>Loading...</div>;
+        return <Basketball_Loader />;
     }
 
     if (error) {

@@ -2,6 +2,7 @@
 
 import { useQuery } from "@tanstack/react-query";
 import { fetchCalendar } from "@/services/fetchCalendar";
+import Basketball_Loader from "../Loaders/basketball-loader";
 import {
     Table,
     TableBody,
@@ -18,7 +19,7 @@ export default function CalendarTable({ team }: { team: string }) {
     });
 
     if (isLoading) {
-        return <div>Loading...</div>;
+        return <Basketball_Loader />;
     }
 
     if (error) {
