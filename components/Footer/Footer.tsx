@@ -16,7 +16,7 @@ export function Footer() {
                     />
                     <Link
                         href="/confidentialite"
-                        className="underline underline-offset-4"
+                        className="underline underline-offset-4 hover:text-pink-500"
                     >
                         Politique de confidentialité
                     </Link>

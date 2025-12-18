@@ -24,3 +24,14 @@ export interface ParsedRankingTableRow {
         difference: number;
     };
 }
+
+export interface Article {
+    id: number;
+    title: string;
+    date: string;
+    imageUrl: string;
+    summary: string;
+    link: string;
+    content: string;
+    images?: string[];
+}
