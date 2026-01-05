@@ -59,34 +59,14 @@ export function MainMenu() {
                     >
                         Actualités
                     </Link>
-                    
-                    <Accordion
-                        type="single"
-                        collapsible
-                        className="w-2/3 text-sm px-3 py-2 font-medium"
+
+                    <Link
+                        href="/equipes"
+                        className="text-sm px-6 py-2 font-semibold uppercase hover:underline hover:underline-offset-4"
+                        onClick={toggleMenu}
                     >
-                        <AccordionItem value="equipes">
-                            <AccordionTrigger className="menu-section-title">
-                                Équipes
-                            </AccordionTrigger>
-                            <AccordionContent className="flex flex-col gap-2">
-                                <Link
-                                    href="/equipes/nos-equipes"
-                                    className="menu-link"
-                                    onClick={toggleMenu}
-                                >
-                                    Nos équipes
-                                </Link>
-                                <Link
-                                    href="/equipes/resultats-et-classements"
-                                    className="menu-link"
-                                    onClick={toggleMenu}
-                                >
-                                    Résultats & Classements
-                                </Link>
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
+                        équipes
+                    </Link>
 
                     <Accordion
                         type="single"

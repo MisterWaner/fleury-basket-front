@@ -1,9 +1,16 @@
 import type { ParsedGame } from "@/lib/types";
 
-export async function fetchCalendar(team: string): Promise<ParsedGame[]> {
+export async function fetchCalendar(team: string, phase?: string): Promise<ParsedGame[]> {
     try {
+        let url: string;
+
+        if (phase) {
+            url = `http://localhost:3001/api/ffbb/${team}/rencontres/${phase}`;
+        } else {
+            url = `http://localhost:3001/api/ffbb/${team}/rencontres`;
+        }
         const response = await fetch(
-            `http://localhost:3001/api/ffbb/${team}/rencontres`,
+            url,
             {
                 method: "GET",
                 headers: {

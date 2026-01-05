@@ -3,7 +3,7 @@ import type { Article } from "@/lib/types";
 export async function fetchArticle(articleId: string): Promise<Article | null> {
     try {
         const response = await fetch(
-            `http://localhost:3001/lib/fakedatere/${articleId}`,
+            `http://localhost:3001/lib/fakedata/${articleId}`,
             {
                 method: "GET",
                 headers: {

@@ -12,10 +12,16 @@ import {
     TableCell,
 } from "@/components/ui/table";
 
-export default function CalendarTable({ team }: { team: string }) {
+export default function CalendarTable({
+    team,
+    phase,
+}: {
+    team: string;
+    phase?: string;
+}) {
     const { data, error, isLoading } = useQuery({
-        queryKey: ["calendar", team],
-        queryFn: () => fetchCalendar(team),
+        queryKey: ["calendar", team, phase],
+        queryFn: () => fetchCalendar(team, phase),
     });
 
     if (isLoading) {
@@ -48,8 +54,9 @@ export default function CalendarTable({ team }: { team: string }) {
                                 : game.result === "Défaite"
                                 ? "bg-red-500 hover:bg-red-400"
                                 : ""
-                            
-                        } border border-slate-950`}
+                        }
+                        
+                        border border-slate-950`}
                     >
                         <TableCell>{game.datetime}</TableCell>
                         <TableCell>{game.opponent}</TableCell>

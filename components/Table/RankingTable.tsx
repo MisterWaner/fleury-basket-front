@@ -12,10 +12,16 @@ import {
 import { fetchRanking } from "@/services/fetchRanking";
 import Basketball_Loader from "../Loaders/basketball-loader";
 
-export default function RankingTable({ team }: { team: string }) {
+export default function RankingTable({
+    team,
+    phase,
+}: {
+    team: string;
+    phase?: string;
+}) {
     const { data, error, isLoading } = useQuery({
-        queryKey: ["ranking", team],
-        queryFn: () => fetchRanking(team),
+        queryKey: ["ranking", team, phase],
+        queryFn: () => fetchRanking(team, phase),
     });
 
     if (isLoading) {
@@ -49,7 +55,7 @@ export default function RankingTable({ team }: { team: string }) {
                             row.club === "FLEURY SUR ORNE BASKET - 1" ||
                             row.club === "FLEURY SUR ORNE BASKET - 2" ||
                             row.club === "FLEURY SUR ORNE BASKET"
-                                ? "bg-pink-500 hover:bg-pink-400"
+                                ? "bg-pink-400 hover:bg-pink-300"
                                 : ""
                         }`}
                     >
@@ -68,3 +74,4 @@ export default function RankingTable({ team }: { team: string }) {
         </Table>
     );
 }
+

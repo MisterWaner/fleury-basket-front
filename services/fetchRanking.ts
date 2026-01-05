@@ -1,11 +1,20 @@
 import type { ParsedRankingTableRow } from "@/lib/types";
 
 export async function fetchRanking(
-    team: string
+    team: string,
+    phase?: string
 ): Promise<ParsedRankingTableRow[]> {
     try {
+        let url: string;
+
+        if (phase) {
+            url = `http://localhost:3001/api/ffbb/${team}/classement/${phase}`;
+        } else {
+            url = `http://localhost:3001/api/ffbb/${team}/classement`;
+        }
+        
         const response = await fetch(
-            `http://localhost:3001/api/ffbb/${team}/classement`,
+            url,
             {
                 method: "GET",
                 headers: {
@@ -26,3 +35,4 @@ export async function fetchRanking(
         return [];
     }
 }
+

@@ -1,11 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface TeamCardProps {
-    teamName?: string;
+    teamName?: string; 
+    link: {
+        href: string;
+        as: string;
+    }
 }
 
-export default function TeamCard({ teamName }: TeamCardProps) {
+export default function TeamCard({ teamName, link }: TeamCardProps) {
     return (
         <Card className="group relative w-64 overflow-hidden cursor-pointer border-none">
             <CardContent className="p-0">
@@ -20,7 +25,7 @@ export default function TeamCard({ teamName }: TeamCardProps) {
                 </div>
                 <div className="absolute inset-0 bg-slate-950/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <h3 className="text-white text-xl font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                        {teamName}
+                        <Link href={link.href} as={link.as}>{teamName}</Link>
                     </h3>
                 </div>
             </CardContent>
